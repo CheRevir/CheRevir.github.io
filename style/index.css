@@ -1,0 +1,19 @@
+@charset "utf-8";
+#images {
+	margin-top: 60px;
+}
+#img {
+	margin: 10px;
+	width: 950px;
+	height: 500px;
+}
+#more li a {
+	display: inline-block;
+	color: black;
+	text-decoration: none;
+}
+#more li a:hover {
+	font-size: 15px;
+	font-weight: bold;
+	color: #0080FF;
+}
