@@ -5,7 +5,7 @@
 <title>图片</title>
 <link href="style/basic.css" rel="stylesheet" type="text/css">
 <link href="style/index.css" rel="stylesheet" type="text/css">
-<script language="javascript" type="text/jscript">
+<script language="javascript" type="text/javascript">
 	var list=new Array(15);
 	list[0]="img/anime/1.jpg";
 	list[1]="img/animal/2.jpg";
@@ -33,11 +33,7 @@
 			document.getElementById("new").appendChild(img);
 		}
 	}
-	function remove(){
-		var more=document.getElementById("more");
-		document.getElementById("content").removeChild(more);
-		add();
-	}
+	setTimeout("add()", 1000);
 </script>
 </head>
 
@@ -52,11 +48,6 @@
 <div id="content" align="center">
   <ul id="images">
     <li><img id="img" src="img/scape/1.jpg"/></li>
-  </ul>
-  <ul id="more">
-    <li><a href="#" onClick="remove()">
-      <h2>更多</h2>
-      </a></li>
   </ul>
 </div>
 </body>
