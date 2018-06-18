@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>动物</title>
+<link href="style/basic.css" rel="stylesheet" type="text/css">
+<link href="style/index.css" rel="stylesheet" type="text/css">
+<script language="javascript" type="text/javascript">
+function add(){
+		for(var i=2;i<=15;i++){
+			var li=document.createElement("li");
+			li.id="new"
+			var img=document.createElement("img");
+			img.id="img";
+			img.src="img/animal/"+i+".jpg"
+			document.getElementById("images").appendChild(li);
+			document.getElementById("new").appendChild(img);
+		}
+	}
+	setTimeout("add()", 1000);
+</script>
+</head>
+
+<body>
+<div id="nav">
+  <ul>
+    <li><a href="index.html">首页</a></li>
+    <li><a href="sort.html">分类</a></li>
+    <li><a href="about.html">关于</a></li>
+  </ul>
+</div>
+<div id="content" align="center">
+  <ul id="images">
+    <li><img id="img" src="img/animal/1.jpg"/></li>
+  </ul>
+</div>
+</body>
+</html>

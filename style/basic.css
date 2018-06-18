@@ -1,25 +1,28 @@
 @charset "utf-8";
-body {
+body{
 	margin: auto;
-	background: #fff;
+	background: #FFFFFF;
 }
 ul {
 	list-style-type: none;
+}
+#content {
+	margin: 55px auto;
 }
 #nav {
 	height: 50px;
 	width: 100%;
 	background: #0080FF;
-	position:fixed;
-	margin:auto;
-	top:0;
+	position: fixed;
+	margin: auto;
+	top: 0;
 }
 #nav ul {
-	position:fixed;
-	margin:auto;
-	left:0; 
-	right:0; 
-	top:0;
+	position: fixed;
+	margin: auto;
+	left: 0;
+	right: 0;
+	top: 0;
 	height: 50px;
 	line-height: 50px;
 }

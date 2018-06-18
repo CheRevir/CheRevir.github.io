@@ -6,39 +6,57 @@
 <link href="style/basic.css" rel="stylesheet" type="text/css">
 <link href="style/index.css" rel="stylesheet" type="text/css">
 <script language="javascript" type="text/javascript">
+	var list=new Array(15);
+	list[0]="img/anime/1.jpg";
+	list[1]="img/animal/2.jpg";
+	list[2]="img/game/2.jpg";
+	list[3]="img/scape/3.jpg";
+	list[4]="img/anime/7.jpg";
+	list[5]="img/animal/5.jpg";
+	list[6]="img/game/7.jpg";
+	list[7]="img/scape/6.jpg";
+	list[8]="img/anime/9.jpg";
+	list[9]="img/animal/9.jpg";
+	list[10]="img/game/9.jpg";
+	list[11]="img/scape/9.jpg";
+	list[12]="img/anime/10.jpg";
+	list[13]="img/animal/10.jpg";
+	list[14]="img/scape/10.jpg";
 	function add(){
-		for(var i=2;i<=16;i++){
-			var ul=document.createElement("ul");
-			ul.id="new"
+		for(var i=2;i<list.length;i++){
+			var li=document.createElement("li");
+			li.id="new"
 			var img=document.createElement("img");
 			img.id="img";
-			img.src="img/"+i+".jpg"
-			document.getElementById("images").appendChild(ul);
+			img.src=list[i]
+			document.getElementById("images").appendChild(li);
 			document.getElementById("new").appendChild(img);
 		}
 	}
 	function remove(){
 		var more=document.getElementById("more");
-		document.getElementById("images").removeChild(more);
+		document.getElementById("content").removeChild(more);
 		add();
 	}
 </script>
 </head>
 
-<body align="center">
+<body>
 <div id="nav">
   <ul>
     <li><a href="index.html">首页</a></li>
     <li><a href="sort.html">分类</a></li>
-    <li><a href="about.html">关于</a></i>
+    <li><a href="about.html">关于</a></li>
   </ul>
 </div>
-<div id="images" align="center">
-  <ul>
-    <img id="img" src="img/1.jpg"/>
+<div id="content" align="center">
+  <ul id="images">
+    <li><img id="img" src="img/scape/1.jpg"/></li>
   </ul>
   <ul id="more">
-    <li><a href="#" onClick="remove()">更多</a></li>
+    <li><a href="#" onClick="remove()">
+      <h2>更多</h2>
+      </a></li>
   </ul>
 </div>
 </body>
