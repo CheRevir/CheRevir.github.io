@@ -9,7 +9,7 @@ table {
 	height: auto;
 }
 table tr td {
-	
+	width: 600px;
 	text-align: center;
 }
 table tr td a {
