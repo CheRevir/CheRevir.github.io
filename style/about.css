@@ -1,10 +1,13 @@
 @charset "utf-8";
-#card {
+.card {
 	margin: 80px auto;
 	padding: 40px;
-	width: 800px;
+	width: 60%;
 	height: auto;
 	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.card ul{
+	padding: 0px;
 }
 a {
 	color: #0080FF;
@@ -12,4 +15,10 @@ a {
 }
 a:hover {
 	color: #00FF2C;
+}
+
+@media screen and (max-width:480px){
+	h1{
+		font-size: 15px;
+	}
 }

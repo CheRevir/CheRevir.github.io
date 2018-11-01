@@ -1,46 +1,41 @@
 @charset "utf-8";
 body{
-	margin: auto;
 	background: #FFFFFF;
 }
-ul {
-	list-style-type: none;
-}
-#content {
-	margin-top: 60px;
-}
-#nav {
+
+nav{
 	height: 50px;
 	width: 100%;
 	background: #0080FF;
 	position: fixed;
-	margin: auto;
 	top: 0;
-}
-#nav ul {
-	position: fixed;
-	margin: auto;
 	left: 0;
 	right: 0;
-	top: 0;
-	height: 50px;
-	line-height: 50px;
 }
-#nav ul li {
-	text-align: center;
-	height: 50px;
-	width: 60px;
-	float: left;
+
+nav ul{
+	display: flex;
+	flex-flow: row wrap;
 }
-#nav ul li a {
-	display: inline-block;
-	width: 60px;
-	height: 50px;
+
+nav ul li{
+	padding: 0px 10px;
+	height: 60px;
+	list-style-type: none;
+}
+
+nav ul li a{
 	color: #fff;
 	text-decoration: none;
 }
-#nav ul li a:hover {
+
+nav ul li a:hover{
 	font-size: 15px;
 	font-weight: bold;
 	color: #00FF2C;
+}
+
+.content{
+	margin: auto;
+	margin-top: 60px;
 }
