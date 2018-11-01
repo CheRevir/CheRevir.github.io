@@ -26,12 +26,12 @@
 	function add(){
 		for(var i=0;i<list.length;i++){
 			var li=document.createElement("li");
-			li.id="new"
+			li.id="new"+i;
 			var img=document.createElement("img");
 			img.id="img";
-			img.src=list[i]
+			img.src=list[i];
 			document.getElementById("images").appendChild(li);
-			document.getElementById("new").appendChild(img);
+			document.getElementById("new"+i).appendChild(img);
 		}
 	}
 	setTimeout("add()", 500);

@@ -10,12 +10,12 @@
 function add(){
 		for(var i=2;i<=15;i++){
 			var li=document.createElement("li");
-			li.id="new"
+			li.id="new"+i;
 			var img=document.createElement("img");
 			img.id="img";
-			img.src="img/scape/"+i+".jpg"
+			img.src="img/scape/"+i+".jpg";
 			document.getElementById("images").appendChild(li);
-			document.getElementById("new").appendChild(img);
+			document.getElementById("new"+i).appendChild(img);
 		}
 	}
 	setTimeout("add()", 500);

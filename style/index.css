@@ -16,6 +16,6 @@ div ul {
 @media screen and (max-width:480px) {
 	#img {
     	width: 90%;
-    	height: auto;
+    	height: 200px;
 	}
 }
