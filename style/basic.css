@@ -39,3 +39,8 @@ nav ul li a:hover{
 	margin: auto;
 	margin-top: 60px;
 }
+
+footer{
+	font-size: 20px;
+	text-align: center;
+}
